@@ -9,22 +9,41 @@
 <body>
 
    <h1>Compra de equipamiento - Counter Strike</h1>
+
+   <div class="login">
+
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+  <button id="login">Ingresar</button>
+
+   </div>
+
+
+   <div id="panelAdmin" style="display:none">
+            <h2>Panel Administrador</h2>
+  <input type="text" id="nombreProducto" placeholder="Nombre">
+  <input type="number" id="precioProducto" placeholder="Precio">
+  <button onclick="agregarProducto()">Agregar producto</button>
+  </div>
+
+
    
 
    <div id="productos"></div>
 
-   
+  <section id="seccion-carrito">
 
-   <h2>Compra de la ronda</h2>
+  <h2>Compra de la ronda</h2>
+  <button id="vaciar">Vaciar carrito</button>
 
-   <button id="vaciar">Vaciar carrito</button>
-
-   <div id="carrito">
-    
+  <div id="carrito">
     <p>No hay productos en el carrito</p>
+  </div>
 
-   </div>
-    
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/usuarios.js"></script>
 <script src="js/main.js"></script>
 
 </body>
